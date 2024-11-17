@@ -1,0 +1,1 @@
+// authentication to prevent unauthorized triggering of emergency responses, initiate emergency response and send alerts

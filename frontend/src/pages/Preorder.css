@@ -1,0 +1,76 @@
+.preorder-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#faecd5;
+
+}
+
+.preorder-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color:#4e4b4b;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-price {
+  font-size: 24px;
+  margin: 15px 0;
+  color: white;
+}
+
+.product-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.product-features li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.product-features li::before {
+  content: '✔️'; /* Optional icon for better visualization */
+  margin-right: 8px;
+  color: green; /* Icon color */
+}
+
+.buy-now {
+  background-color: yellow;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+
+
+/* Optional styling for better responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,57 @@
+/* Default styles for larger screens (desktops, laptops) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+  }
+  
+  .grid {
+    display: grid;
+    gap: 16px;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  }
+  
+  .col-span-1 {
+    grid-column: span 2;
+  }
+  
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  
+  /* Media Queries for Smaller Screens (Below 768px) */
+  @media (max-width: 768px) {
+    .grid-cols-3 {
+      grid-template-columns: 1fr; /* Single column */
+    }
+  
+    .col-span-2 {
+      grid-column: span 1; /* Align to a single column */
+    }
+  }
+  
+  /* Media Queries for Mobile Devices (Below 480px) */
+  @media (max-width: 480px) {
+    .py-12 {
+      padding: 16px; /* Reduce padding for smaller screens */
+    }
+  
+    .text-3xl {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .text-xl {
+      font-size: 18px; /* Adjust subheading size */
+    }
+  
+    .mb-4 {
+      margin-bottom: 8px; /* Reduce spacing */
+    }
+  
+    .mb-2 {
+      margin-bottom: 10px; /* Reduce spacing */
+      
+    }
+  }

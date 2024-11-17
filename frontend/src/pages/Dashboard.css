@@ -1,0 +1,253 @@
+/* Base styles */
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c2f33;
+    color: #fff;
+    padding: 20px;
+    overflow: auto; /* Handles content overflow */
+    height: 700px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 0;
+  }
+  
+  .sidebar-link,
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .sidebar-link:hover,
+  .sidebar a:hover {
+    color: #ffbf00;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+  .arrow-icon {
+    margin-left: auto; /* Pushes the arrow to the far right */
+  }
+  
+  .submenu {
+    padding-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .submenu li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .submenu .icon {
+    margin-right: 8px;
+  }
+  
+    
+/* Main content area */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+/* Header styles */
+.header {
+    background-color: #23272a;
+    padding: 20px;
+    color: #fff;
+}
+
+.header .breadcrumb {
+    color: #7289da;
+}
+
+/* Profile header styles */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.profile-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.profile-header .handle {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header .handle h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.profile-header .handle p {
+    margin: 0;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.profile-header .btn {
+    margin-left: auto;
+}
+
+.profile-header .btn button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-size: 1em;
+}
+
+.profile-header .btn button:hover {
+    background-color: #ffcc00;
+}
+
+/* Profile card styles */
+.profile-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.profile-card h2 {
+    margin-bottom: 20px;
+    color: #ffd700;
+    font-size: 1.5em;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+/* Profile details styles */
+.profile-details .detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-details .detail {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.profile-details .detail h4 {
+    margin: 0 0 5px 0;
+    color: #ccc;
+    font-size: 1.1em;
+}
+
+.profile-details .detail p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+.edit-info-btn, .profile-header .btn button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    font-size: 1em;
+}
+
+.edit-info-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-details .detail {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-details .detail h4,
+    .profile-details .detail p,
+    .profile-details .detail button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .profile-header h3,
+    .profile-header p {
+        font-size: 14px;
+    }
+
+    .profile-details .detail h4,
+    .profile-details .detail p {
+        font-size: 12px;
+    }
+
+    .profile-details .detail button {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
