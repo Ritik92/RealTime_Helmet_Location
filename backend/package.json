@@ -29,6 +29,7 @@
     "nodemon": "^3.1.0",
     "otp-generator": "^4.0.1",
     "razorpay": "^2.9.4",
+    "smsapi": "^2.0.14",
     "socket.io": "^4.7.5",
     "textbelt": "^0.0.4",
     "twilio": "^5.2.3",
