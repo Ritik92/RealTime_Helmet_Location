@@ -1,6 +1,6 @@
 const express = require("express");
 const expressWs = require("express-ws");
-const app = express();
+const app = express();t
 const userRoutes = require("./routes/User");
 const collisionRoutes = require("./routes/Collision");
 const paymentRoutes = require("./routes/Payment");
@@ -101,6 +101,7 @@ app.post('/api/v1/share-location', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-    console.log(`App is running at ${PORT}`);
+app.listen(4000, '0.0.0.0', () => {
+    console.log('Server running on port 4000');
 });
+
