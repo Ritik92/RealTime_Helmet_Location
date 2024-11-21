@@ -83,14 +83,13 @@ app.post('/api/v1/share-location', async (req, res) => {
       };
     });
 
-    // 4. Send SMS using your preferred service (example using Twilio)
-    // for (const notification of notifications) {
-    //   await twilioClient.messages.create({
-    //     body: notification.body,
-    //     to: notification.to,
-    //     from: 'YOUR_TWILIO_PHONE_NUMBER'
-    //   });
-    // }
+    for (const notification of notifications) {
+        await axios.post('https://textbelt.com/text', {
+          phone: notification.phone,
+          message: notification.message,
+          key: d673c110cfba42aea1586cdf338e9de3f843ded00vQ2ZKkttTfMGHEq0LLf1kAWu // Use your Textbelt API key here
+        });
+      }
     
       
     res.status(200).json({ message: notifications });
