@@ -25,12 +25,11 @@ database.connect();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-    cors({
-        origin: "https://mindshield.ritikcrafts.org",
-        credentials: true,
-    })
-);
+app.use(cors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true
+}));
 
 // Initialize express-ws
 expressWs(app);
