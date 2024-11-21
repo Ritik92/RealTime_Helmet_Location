@@ -45,7 +45,7 @@ export const EmergencyButton = () => {
       });
 
       // Replace this URL with your actual API endpoint
-      const response = await fetch('http://localhost:4000/api/v1/share-location', {
+      const response = await fetch('http://34.230.70.55/api/v1/share-location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

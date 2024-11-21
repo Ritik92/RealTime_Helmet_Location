@@ -67,7 +67,7 @@ const ContactPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/contact/contact",
+        "http://34.230.70.55:4000/api/v1/contact/contact",
         {
           email: data.email,
           firstName: data.firstname,

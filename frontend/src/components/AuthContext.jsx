@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
     confirmPassword) => {
     try {
       const response = await axios.post(
-        'http://localhost:4000/api/v1/auth/signup',
+        'http://34.230.70.55:4000/api/v1/auth/signup',
         {
             email, 
             password,

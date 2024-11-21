@@ -7,7 +7,7 @@ import { useAuth } from '../components/AuthContext';
 import { Plus, Pencil, Trash2, X, Phone, User } from 'lucide-react';
 import { EmergencyButton } from '../components/EmergencyButton';
 
-const BASE_URL = 'http://localhost:4000/api/v1';
+const BASE_URL = 'http://34.230.70.55:4000/api/v1';
 
 const EmergencyContacts = () => {
   const { user } = useAuth();
