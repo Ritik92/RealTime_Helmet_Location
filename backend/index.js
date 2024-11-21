@@ -1,6 +1,6 @@
 const express = require("express");
 const expressWs = require("express-ws");
-const app = express();t
+const app = express();
 const userRoutes = require("./routes/User");
 const collisionRoutes = require("./routes/Collision");
 const paymentRoutes = require("./routes/Payment");
