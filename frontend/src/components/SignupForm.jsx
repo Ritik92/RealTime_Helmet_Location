@@ -24,7 +24,7 @@ const SignupForm = ({ setIsLoggedIn }) => {
         try{
             if(formData.email){
                 const response = await axios.post(
-                    'http://34.230.70.55/api/v1/auth/sendotp',
+                    'http://34.230.70.55:4000/api/v1/auth/sendotp',
                     {
                         email: formData.email
                     }
