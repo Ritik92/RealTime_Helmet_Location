@@ -26,8 +26,7 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: 'http://34.230.70.55',
     credentials: true
 }));
 
