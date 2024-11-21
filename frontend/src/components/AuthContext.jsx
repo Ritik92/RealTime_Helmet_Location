@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await axios.post('http://34.230.70.55:4000/api/v1/auth/login',{
+      const response = await axios.post('http://54.221.63.113:4000/api/v1/auth/login',{
         email,
         password
       })
