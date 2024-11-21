@@ -15,6 +15,7 @@ const cors = require("cors");
 const twilio = require('twilio');
 const User = require("./models/User");
 const EmergencyContacts = require("./models/EmergencyContacts");
+const mailSender = require("./utils/mailSender");
 const PORT = process.env.PORT || 4000;
 const client = twilio(
     process.env.TWILIO_ACCOUNT_SID,
